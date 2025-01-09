@@ -3,9 +3,9 @@ let header__title = document.querySelector('.header__brand').querySelector('h2')
 
 window.onload = function() {
 	const images = [
-		'url("/img/background/back-1.jpg")', // /Mr.Alyx2/img/background/back-1.webp
-		'url("/img/background/back-2.jpg")', // /Mr.Alyx2/img/background/back-2.webp
-		'url("/img/background/back-3.jpg")', // /Mr.Alyx2/img/background/back-3.webp
+		'url("/Mr.Alyx2/img/background/back-1.jpg")', // /Mr.Alyx2/img/background/back-1.webp
+		'url("/Mr.Alyx2/img/background/back-2.jpg")', // /Mr.Alyx2/img/background/back-2.webp
+		'url("/Mr.Alyx2/img/background/back-3.jpg")', // /Mr.Alyx2/img/background/back-3.webp
 		];
 
 	function changeBackground() {
