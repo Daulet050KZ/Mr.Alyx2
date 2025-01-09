@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MR.ALYX2 - Персонажи</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+
+	<link rel="shortcut icon" href="/img/logo.png"> <!-- /Mr.Alyx2/img/logo.png -->
+
+	<link rel="stylesheet" href="/css/header.css"> <!-- /Mr.Alyx2/css/header.css -->
+	<link rel="stylesheet" href="/css/main.css"> <!-- /Mr.Alyx2/css/main.css -->
+	<link rel="stylesheet" href="/css/footer.css"> <!-- /Mr.Alyx2/css/footer.css -->
+
+	<link rel="stylesheet" href="/css/globalStyle.css"> <!-- /Mr.Alyx2/css/globalStyle.css -->
+	<link rel="stylesheet" href="/css/adaptive.css"> <!-- /Mr.Alyx2/css/adaptive.css -->
+	<link rel="stylesheet" href="/css/burger.css"> <!-- /Mr.Alyx2/css/burger.css -->
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header__brand">
+				<img src="/img/logo.png" alt=""> <!-- /Mr.Alyx2/img/logo.png -->
+				<h2>MR.ALYX2</h2>
+			</div>
+			<div class="header__nav">
+				<a href="/index.html">Главная</a> <!-- /Mr.Alyx2/index.html -->
+				<a href="/templates/works/index.html">Работы</a> <!-- /Mr.Alyx2/templates/works/index.html -->
+				<a href="/templates/characters/index.html" class="currentPage">Персонажи</a> <!-- /Mr.Alyx2/templates/characters/index.html -->
+				<a href="/templates/design/index.html">Дизайны</a> <!-- /Mr.Alyx2/templates/design/index.html -->
+			</div>
+			<h2 class="langSelect" onmouseover="document.getElementById('langList').style.display = 'flex';" onmouseout="setTimeout(() => {document.getElementById('langList').style.display = 'none';}, 1300)">RU</h2>
+			<div id="langList">
+				<!-- <a href="/index.html" class="langSelect">RU</a> -->
+				<a href="/index-eng.html" class="langSelect">EN</a>
+			</div>
+		</div>
+	</header>
+	<main class="works">
+		<div class="container">
+			<div class="content">
+				<div class="stage-1">
+					<img id="img-1" src="/templates/characters/w1.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w1.webp -->
+					<img id="img-2" src="/templates/characters/w3.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w3.webp -->
+					<img id="img-3" src="/templates/characters/w13.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w10.webp -->
+				</div>
+				<div class="stage-2">
+					<img id="img-4" src="/templates/characters/w4.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w4.webp -->
+					<img id="img-5" src="/templates/characters/w6.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w6.webp -->
+					<img id="img-6" src="/templates/characters/w7.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w7.webp -->
+				</div>
+				<div class="stage-3">
+					<img id="img-7" src="/templates/characters/w9.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w9.webp -->
+					<img id="img-8" src="/templates/characters/w10.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w10.webp -->
+					<img id="img-9" src="/templates/characters/w12.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w11.webp -->
+				</div>
+				<div class="stage-4">
+					<img id="img-10" src="/templates/characters/w2.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w2.webp -->
+					<img id="img-11" src="/templates/characters/w8.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w8.webp -->
+					<img id="img-12" src="/templates/characters/w11.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w11.webp -->
+				</div>
+				<div class="stage-5">
+					<img id="img-13" src="/templates/characters/w5.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w5.webp -->
+					<img id="img-14" src="/templates/characters/w14.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w11.webp -->
+				</div>
+			</div>
+		</div>
+
+		<div class="image-view" style="display: none;">
+			<img src="" alt="">
+			<i class="fa-solid fa-xmark"></i>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="links">
+				<i class="fa-solid fa-brand-vk"></i>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		let header__logo = document.querySelector('.header__brand').querySelector('img');
+		let header__title = document.querySelector('.header__brand').querySelector('h2');
+
+		window.onload = function() {
+			setTimeout(()=> {
+				document.querySelector('header').style.opacity = '1'
+				document.querySelector('footer').style.opacity = '1'
+			}, 1000);
+
+			setTimeout(()=> {
+				header__logo.style.transition = '1s';
+				header__logo.style.transform = 'translateX(0%) rotate(0deg)';
+				header__logo.style.left = '0'
+			}, 1200);
+			setTimeout(()=> {
+				document.querySelector('main').querySelector('.container').style.opacity = '1';
+			}, 1200);
+			setTimeout(()=> {
+				header__logo.style.transition = '1s';
+				header__title.style.opacity = '1';
+			}, 1500);
+			setTimeout(()=> {
+				document.querySelector('body').style.transition = '1.3s';
+				document.querySelector('body').style.backgroundSize = '100% 100%'
+			}, 0);
+		};
+	</script> 
+	<script src="/js/image-view.js"></script> <!-- /Mr.Alyx2/js/image-view.js -->
+</body>
+</html>

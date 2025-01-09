@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	transition: .3s;
+}
+body {
+/*	background-color: #6600ff;*/
+	background-size: 150% 150%;
+	background-position: center;
+
+	width: 100%;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	padding: 0px 100px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
