@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MR.ALYX2 - Персонажи</title>
+	<title>MR.ALYX2 - Дизайн</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
@@ -16,8 +16,8 @@
 	<link rel="stylesheet" href="/css/footer.css"> <!-- /Mr.Alyx2/css/footer.css -->
 
 	<link rel="stylesheet" href="/css/globalStyle.css"> <!-- /Mr.Alyx2/css/globalStyle.css -->
-	<link rel="stylesheet" href="/css/burger.css"> <!-- /Mr.Alyx2/css/burger.css -->
 	<link rel="stylesheet" href="/css/adaptive.css"> <!-- /Mr.Alyx2/css/adaptive.css -->
+	<link rel="stylesheet" href="/css/burger.css"> <!-- /Mr.Alyx2/css/burger.css -->
 </head>
 <body>
 	<header>
@@ -29,25 +29,13 @@
 			<div class="header__nav">
 				<a class="nav1" href="/index.html">Главная</a> <!-- /Mr.Alyx2/index.html -->
 				<a class="nav2" href="/templates/works/index.html">Работы</a> <!-- /Mr.Alyx2/templates/works/index.html -->
-				<a class="nav3 currentPage" href="/templates/characters/index.html">Персонажи</a> <!-- /Mr.Alyx2/templates/characters/index.html -->
-				<a class="nav4" href="/templates/design/index.html">Дизайны</a> <!-- /Mr.Alyx2/templates/design/index.html -->
+				<a class="nav3" href="/templates/characters/index.html">Персонажи</a> <!-- /Mr.Alyx2/templates/characters/index.html -->
+				<a class="nav4 currentPage" href="/templates/design/index.html">Дизайны</a> <!-- /Mr.Alyx2/templates/design/index.html -->
 			</div>
 			<h2 class="langSelect" onmouseover="document.getElementById('langList').style.display = 'flex';" onmouseout="setTimeout(() => {document.getElementById('langList').style.display = 'none';}, 1300)">RU</h2>
 			<div id="langList">
 				<h2 class="langSelect EN" onclick="localStorage.setItem('selectLangEn', 'true'); checkSelect();">EN</h2>
 				<h2 class="langSelect RU" onclick="localStorage.setItem('selectLangEn', 'false'); checkSelect();">RU</h2>
-			</div>
-
-			<div id="nav-icon6">
-				<span></span>
-			</div>
-
-			<div id="burger">
-				<div>
-					<a class="nav1" href="/index.html">Главная</a> <!-- /Mr.Alyx2/index.html -->
-					<a class="nav2" href="/templates/works/index.html">Работы</a> <!-- /Mr.Alyx2/templates/works/index.html -->
-					<a class="nav3 currentPage" href="/templates/characters/index.html">Персонажи</a> <!-- /Mr.Alyx2/templates/characters/index.html -->
-				</div>
 			</div>
 		</div>
 	</header>
@@ -55,28 +43,14 @@
 		<div class="container">
 			<div class="content">
 				<div class="stage-1">
-					<img id="img-1" src="/templates/characters/w1.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w1.webp -->
-					<img id="img-2" src="/templates/characters/w3.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w3.webp -->
-					<img id="img-3" src="/templates/characters/w13.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w10.webp -->
+					<img id="img-1" src="/templates/design/w1.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w1.webp -->
+					<img id="img-2" src="/templates/design/w3.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w3.webp -->
+					<img id="img-3" src="/templates/design/w13.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w10.webp -->
 				</div>
 				<div class="stage-2">
-					<img id="img-4" src="/templates/characters/w4.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w4.webp -->
-					<img id="img-5" src="/templates/characters/w6.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w6.webp -->
-					<img id="img-6" src="/templates/characters/w7.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w7.webp -->
-				</div>
-				<div class="stage-3">
-					<img id="img-7" src="/templates/characters/w9.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w9.webp -->
-					<img id="img-8" src="/templates/characters/w10.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w10.webp -->
-					<img id="img-9" src="/templates/characters/w12.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w11.webp -->
-				</div>
-				<div class="stage-4">
-					<img id="img-10" src="/templates/characters/w2.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w2.webp -->
-					<img id="img-11" src="/templates/characters/w8.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w8.webp -->
-					<img id="img-12" src="/templates/characters/w11.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w11.webp -->
-				</div>
-				<div class="stage-5">
-					<img id="img-13" src="/templates/characters/w5.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w5.webp -->
-					<img id="img-14" src="/templates/characters/w14.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w11.webp -->
+					<img id="img-4" src="/templates/design/w4.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w4.webp -->
+					<img id="img-5" src="/templates/design/w6.png" alt=""> <!-- /Mr.Alyx2/templates/characters/w6.webp -->
+					<img id="img-6" src="/templates/design/w7.jpg" alt=""> <!-- /Mr.Alyx2/templates/characters/w7.webp -->
 				</div>
 			</div>
 		</div>
@@ -123,7 +97,5 @@
 			}, 0);
 		};
 	</script> 
-	<script src="/js/image-view.js"></script> <!-- /Mr.Alyx2/js/image-view.js -->
-	<script src="/js/burger.js"></script> <!-- /Mr.Alyx2/js/burger.js -->
 </body>
 </html>
