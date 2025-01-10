@@ -100,13 +100,16 @@
 					document.querySelector('body').style.overflow = 'hidden';
 
 					if(1 <= i || i >= 3){
-						document.querySelector('.image-view').querySelector('img').style.width = '80%';
+						document.querySelector('.image-view').querySelector('img').classList.add('v16x9');
+						document.querySelector('.image-view').querySelector('img').classList.remove('v9x16');
 					};
 					if(4 <= i || i >= 6){
-						document.querySelector('.image-view').querySelector('img').style.width = '39%';
+						document.querySelector('.image-view').querySelector('img').classList.add('v9x16');
+						document.querySelector('.image-view').querySelector('img').classList.remove('v16x9');
 					};
 					if(7 <= i || i >= 11){
-						document.querySelector('.image-view').querySelector('img').style.width = '80%';
+						document.querySelector('.image-view').querySelector('img').classList.add('v16x9');
+						document.querySelector('.image-view').querySelector('img').classList.remove('v9x16');
 					};
 				};
 			});
